@@ -15,16 +15,28 @@ class Movie {
         $this->genre = $_genre;
 
     }
+
+
+   public function printMovie() {
+   
+    echo $this->title;
+    echo '<br>';
+    echo $this->year;
+    echo '<br>';
+    echo $this->genre;
+   }
 }
 
 
 $movieOne = new Movie ('The Godfather', 1972, 'Drama');
 var_dump($movieOne);
+$movieOne->printMovie();
 
 
 
 $movieTwo = new Movie ('Drive My Car',2021, 'Drama');
 var_dump($movieTwo);
+$movieTwo->printMovie();
 
 
 ?>
